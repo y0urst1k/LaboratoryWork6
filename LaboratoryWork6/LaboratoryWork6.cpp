@@ -1,233 +1,243 @@
 ﻿#include <iostream>
-#include <fstream>
-#include <filesystem>
-#include <limits>
+#include <random>
+#include <iomanip>
 
 using std::cout;
+using std::setw;
 using std::cin;
 using std::endl;
-using std::fstream;
-using std::ios;
-using std::numeric_limits;
-using std::ios_base;
+using std::random_device;
+using std::uniform_real_distribution;
 
-bool IsValidValue(int, int);
-void WriteInFile(int, bool = true, bool = false);
-void ReadAllFromFile();
-void ReadFromFile(int);
-void SearchSummEvenNumbers(bool = false);
-void SearchMinPositiveNumber(bool = false);
-
+void Ex1();
+void PrintSeparator(int = 50, char = '#');
+double TriangleSquare(double*, double*);
+double& MaxParamLink(double&, double&, double&);
+double* MaxParamPtr(double&, double&, double&);
+void SwitchMaxElement(bool uselink = true);
+double** GetArray(int&, int&);
+void OutputArray(double**, int&, int&);
+double* GetMaxElement(double**, int&, int&);
+double* GetMinElement(double**, int&, int&);
+void SwapElements(double*, double*);
+void UseArray();
 
 int main()
 {
     setlocale(LC_ALL, "Ru");
-    int n, m;
 
-    do
-    {
-        cout << "Сколько чисел записать? ";
-        cin >> n;
-        cout << "Сколько чисел считать? ";
-        cin >> m;
-    } while (!IsValidValue(n,m));
-
+    Ex1();
+    PrintSeparator();
     
-    WriteInFile(n);
-    cout << "Набор данных: ";
-    ReadFromFile(m);
-    WriteInFile(n, false);
-    cout << "Другой набор данных(по-честному): "; 
-    ReadAllFromFile();
-    SearchSummEvenNumbers();
-    SearchMinPositiveNumber();
-    WriteInFile(n, false, true);
-    SearchSummEvenNumbers(true);
-    SearchMinPositiveNumber(true);
+    double side = 3, high = 5;
+    cout << "Площадь треугольника = " << TriangleSquare(&side, &high) << endl;
+    PrintSeparator();
+
+    SwitchMaxElement();
+    SwitchMaxElement(false);
+    PrintSeparator();
+
+    UseArray();
 }
 
-bool IsValidValue(int n, int m)
+void PrintSeparator(int count, char separator)
 {
-    if (n < 1 || m < 1 || m > n)
+    for (int i = 0; i < count; i++)
     {
-        cout << "Not a valid number!" << endl;
-        return false;
+        cout << separator;
     }
-    return true;
-}
-
-void WriteInFile(int n, bool isFirstEx, bool useBinary)
-{
-    const char* filename = useBinary ? "file.bin" : "file.txt";
-    ios_base::openmode mode = ios::out | ios::trunc;
-    if (useBinary) 
-        mode = mode | ios::binary;
-
-    fstream fs(filename, mode);
-    if (!fs.is_open())
-    {
-        cout << "No file found (write)" << endl;
-        return;
-    }
-
-    if (!useBinary)
-    {
-        if (isFirstEx)
-        {
-            for (int i = 2; i <= n * 2; i += 2)
-                fs << i << ' ';
-        }
-        else
-        {
-            int size = rand() % 3 + 1;
-            for (int i = 0; i < n * size; ++i)
-                fs << i << ' ';
-        }
-    }
-    else
-    {
-        if (isFirstEx)
-        {
-            for (int i = 2; i <= n * 2; i += 2)
-                fs.write((char*)&i, sizeof(i));
-        }
-        else
-        {
-            int size = std::rand() % 3 + 1;
-            for (int i = 0; i < n * size; ++i)
-                fs.write((char*)&i, sizeof(i));
-        }
-    }
-
-    fs.close();
-}
-
-void ReadFromFile(int m)
-{
-    fstream fs;
-    fs.open("file.txt", ios::in);
-
-    if (!fs.is_open())
-    {
-        cout << "No file found (reading)" << endl;
-        return;
-    }
-
-    fs.seekp(0, ios::beg);
-
-    int number;
-    for (int i = 1; i <= m; i++)
-    {
-        fs >> number;
-        cout << number << ' ';
-    }
-
     cout << endl;
-
-    fs.close();
 }
 
-void ReadAllFromFile()
+void Ex1()
 {
-    fstream fs;
-    fs.open("file.txt", ios::in);
+    double m = 0;
+    cout << "Значение переменной = " << m << endl;
 
-    if (!fs.is_open())
+    cout << "Присваиваем указателю переменную" << endl;
+    double* ptr = &m;
+    cout << "*ptr = " << *ptr << endl;
+
+    cout << "Меняем значение переменной через указатель на 100" << endl;
+    *ptr = 100;
+    cout << "Значение переменной  = " << m << endl;
+
+    cout << "Копируем значение 1 указателя во второй" << endl;
+    double* ptr2 = ptr;
+
+    cout << "Меняем значение переменной через 2 указатель на 200" << endl;
+    *ptr2 = 200;
+    cout << "Значение переменной = " << m << endl;
+
+    cout << "Адреса:" << endl;
+    cout << "ptr: " << ptr << endl;
+    cout << "ptr2: " << ptr2 << endl;
+}
+
+double TriangleSquare(double *side, double *high)
+{
+    if (*side <= 0)
+        cout << "Сторона должна быть больше 0";
+    if (*high <= 0)
+        cout << "Высота должна быть больше 0";
+
+    return *side * *high / 2;
+}
+
+double& MaxParamLink(double& item1, double& item2, double& item3)
+{
+    double* items[] = { &item1, &item2, &item3 };
+    double* max = items[0];
+
+    for (int i = 1; i < 3; i++)
     {
-        cout << "No file found (reading)" << endl;
-        return;
+        if (*items[i] > *max)
+        {
+            max = items[i];
+        }
     }
 
-    fs.seekp(0, ios::beg);
+    return *max;
+}
 
-    int number;
-    while (fs >> number)
+double* MaxParamPtr(double& item1, double& item2, double& item3)
+{
+    double* items[] = { &item1, &item2, &item3 };
+    double* max = items[0];
+
+    for (int i = 1; i < 3; i++)
     {
-        cout << number << ' ';
+        if (*items[i] > *max)
+        {
+            max = items[i];
+        }
     }
 
+    return max;
+}
+
+void SwitchMaxElement(bool useLink)
+{
+    double item1 = -1, item2 = 2, item3 = 0;
+    if (useLink)
+    {
+        cout << "Используем ссылку:" << endl;
+        double& linkMax = MaxParamLink(item1, item2, item3);
+        cout << "Максимальный параметр = " << linkMax << endl;
+        double newMax = (item1 + item2 + item3) / 3;
+        linkMax = newMax;
+        cout << "Замена на среднее значение: " << linkMax << endl;
+        cout << "Адрес: " << &linkMax << endl;
+    }
+    else
+    {
+        cout << "Используем указатель:" << endl;
+        double* linkMax = MaxParamPtr(item1, item2, item3);
+        cout << "Максимальный параметр = " << *linkMax << endl;
+        double newMax = (item1 + item2 + item3) / 3;
+        *linkMax = newMax;
+        cout << "Замена на среднее значение: " << *linkMax << endl;
+        cout << "Адрес: " << linkMax << endl;
+    }
+}
+
+double** GetArray(int& rows, int& columns)
+{
+    double item;
+    random_device rd;
+    uniform_real_distribution<double> dis(-5.0, 5.0);
+
+    double** data = new double* [rows];
+    for (int i = 0; i < rows; i++)
+    {
+        data[i] = new double[columns] {};
+    }
+
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+        {
+            item = dis(rd);
+            data[i][j] = item;
+        }
+
+    return data;
+}
+
+void OutputArray(double** data, int& rows, int& columns)
+{
+    cout << "Массив чисел:" << endl;
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+            cout << setw(10) << data[i][j];
+        cout << endl;
+    }
     cout << endl;
-
-    fs.close();
 }
 
-void SearchSummEvenNumbers(bool isBinary)
+double* GetMaxElement(double** data, int& rows, int& columns)
 {
-    const char* filename = isBinary ? "file.bin" : "file.txt";
-    ios_base::openmode mode = ios::in;
-    if (isBinary)
-        mode = mode | ios::binary;
+    double* max = &data[0][0];
 
-    fstream fs(filename, mode);
-    if (!fs.is_open())
+    for (int i = 0; i < rows; i++)
     {
-        cout << "No file found (reading)" << endl;
-        return;
-    }
-
-    fs.seekp(0, ios::beg);
-
-    int number, summ = 0;
-    if (!isBinary)
-    {
-        while (fs >> number)
+        for (int j = 0; j < columns; j++)
         {
-            if (number % 2 == 0)
-                summ += number;
+            if (data[i][j] > *max)
+            {
+                max = &data[i][j];
+            }
         }
-        cout << "Сумма четных чисел: " << summ << endl;
-    }
-    else
-    {
-        while (fs.read((char*) &number, sizeof(number)))
-        {
-            if (number % 2 == 0)
-                summ += number;
-        }
-        cout << "Сумма четных чисел (из бинарного метода): " << summ << endl;
     }
 
-    fs.close();
+    return max;
 }
 
-void SearchMinPositiveNumber(bool isBinary)
+double* GetMinElement(double** data, int& rows, int& columns)
 {
-    const char* filename = isBinary ? "file.bin" : "file.txt";
-    ios_base::openmode mode = ios::in;
-    if (isBinary)
-        mode = mode | ios::binary;
+    double* min = &data[0][0];
 
-    fstream fs(filename, mode);
-
-    if (!fs.is_open())
+    for (int i = 0; i < rows; i++)
     {
-        cout << "No file found (reading)" << endl;
-        return;
-    }
-
-    fs.seekp(0, ios::beg);
-
-    int number, min = numeric_limits<int>::max();
-
-    if (!isBinary)
-    {
-        while (fs >> number)
+        for (int j = 0; j < columns; j++)
         {
-            if (number > 0 && number < min)
-                min = number;
+            if (data[i][j] < *min)
+            {
+                min = &data[i][j];
+            }
         }
-        cout << "Минимальное положительное число: " << min << endl;
-    }
-    else
-    {
-        while (fs.read((char*)&number, sizeof(number)))
-        {
-            if (number > 0 && number < min)
-                min = number;
-        }
-        cout << "Минимальное положительное число (из бинарного метода): " << min << endl;
     }
 
-    fs.close();;
+    return min;
 }
 
+void SwapElements(double* max, double* min)
+{
+    double temp = *max;
+    *max = *min;
+    *min = temp;
+}
+
+void UseArray()
+{
+    int rows = 4,columns = 5;
+
+    double** data = GetArray(rows, columns);
+    OutputArray(data, rows, columns);
+
+    double* maxItem = GetMaxElement(data, rows, columns);
+    cout << "Максимальный элемент: " << *maxItem << endl;
+    double* minItem = GetMinElement(data, rows, columns);
+    cout << "Минимальный элемент: " << *minItem << endl;
+
+    cout << "Поменяем макс. и мин. элементы" << endl;
+    SwapElements(maxItem, minItem);
+    OutputArray(data, rows, columns);
+
+    for (int i = 0; i < rows; i++)
+    {
+        delete[] data[i];
+    }
+    delete[] data;
+    data = nullptr;
+}
