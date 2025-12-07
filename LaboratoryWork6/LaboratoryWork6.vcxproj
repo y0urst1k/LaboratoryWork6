@@ -123,7 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="General.cpp" />
     <ClCompile Include="LaboratoryWork6.cpp" />
+    <ClCompile Include="MatrixWork.cpp" />
+    <ClCompile Include="MatrixWithFilesWork.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="General.h" />
+    <ClInclude Include="MatrixWithFilesWork.h" />
+    <ClInclude Include="MatrixWork.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

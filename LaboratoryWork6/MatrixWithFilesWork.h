@@ -1,0 +1,14 @@
+void OutputMatrix(int**&, int&, int&);
+void OutputVector(int*&, int&);
+int**& GetMatrix(int&, int&, int&, int&);
+int*& GetVector(int&, int&, int&);
+void WriteMatrixInFile(int**&, char, int&, int&, std::fstream&);
+void WriteVectorInFile(int*&, int&, char, std::fstream&);
+void ReadMatrixFromFile(int**&, std::fstream&);
+void ReadVectorFromFile(int*&, std::fstream&);
+void TranspositionMatrix(int**&, int&, int&);
+int** MatrixMultiplication(int**&, int&, int&, int**&, int&, int&);
+int** VectorMultiplication(int*&, int&, int*&, int&);
+int** MultiplyMatrixByNumber(int**&, int&, int&, int&);
+int** DefinitionMatrix(int**&, int&, int&, int**&, int&, int&);
+void UseMatrixWithFiles();
