@@ -341,14 +341,12 @@ void UseMatrixWithFiles()
     cout << "Матрица, полученная умножением матрицы BDт на 2:" << endl;
     OutputMatrix(matrixBD_Number, rowsA, columnsC);
 
-    int** result = DefinitionMatrix(matrixAC_Number, rowsA, columnsC, matrixAC_Number, rowsA, columnsC);
+    int** result = DefinitionMatrix(matrixAC_Number, rowsA, columnsC, matrixBD_Number, rowsA, columnsC);
     cout << "Итоговая матрица:" << endl;
     OutputMatrix(result, rowsA, columnsC);
 
     ClearMatrix(matrixAC, rowsA);
-    ClearMatrix(matrixAC_Number, rowsA);
-    ClearMatrix(matrixBD, sizeB);
-    ClearMatrix(matrixBD_Number, rowsA);
+    ClearMatrix(matrixBD, rowsA);
     ClearMatrix(result, rowsA);
     delete[] vectorB;
     vectorB = nullptr;
