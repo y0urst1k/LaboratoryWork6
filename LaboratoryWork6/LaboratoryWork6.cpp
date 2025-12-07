@@ -17,6 +17,7 @@ int main()
 
     srand(time(nullptr));
 
+    UseMatrix();
     
     PrintSeparator();
 
