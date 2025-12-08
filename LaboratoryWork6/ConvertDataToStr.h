@@ -4,6 +4,6 @@
 
 
 std::string CarMarkToString(CarMark mark);
-std::string CountryToString(Country country);
-std::string CarColorToString(CarColor color);
-std::string CarBodyworkToString(CarBodywork body);
+std::string CountryToString(Country country, bool toDisplay = true);
+std::string CarColorToString(CarColor color, bool toDisplay = true);
+std::string CarBodyworkToString(CarBodywork body, bool toDisplay = true);

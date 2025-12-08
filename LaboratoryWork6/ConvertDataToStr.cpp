@@ -49,57 +49,130 @@ string CarMarkToString(CarMark mark)
     }
 }
 
-string CountryToString(Country country) 
+string CountryToString(Country country, bool toDisplay) 
 {
-    switch (country) 
+    if (toDisplay)
     {
-        case Country::Germany: 
-            return "Германия";
-        case Country::Japan:
-            return "Япония";
-        case Country::USA: 
-            return "США";
-        case Country::Russia: 
-            return "Россия";
-        default: 
-            return "Unknown";
+        switch (country)
+        {
+            case Country::Germany:
+                return "Германия";
+            case Country::Japan:
+                return "Япония";
+            case Country::USA:
+                return "США";
+            case Country::Russia:
+                return "Россия";
+            default:
+                return "Неизвестно";
+            }
+    }
+    else
+    {
+        switch (country)
+        {
+            case Country::Germany:
+                return "Germany";
+            case Country::Japan:
+                return "Japan";
+            case Country::USA:
+                return "USA";
+            case Country::Russia:
+                return "Russia";
+            default:
+                return "Unknown";
+        }
     }
 }
 
-string CarColorToString(CarColor color) 
+string CarColorToString(CarColor color, bool toDisplay)
 {
-    switch (color) 
+    if (toDisplay)
     {
-        case CarColor::Blue: 
-            return "Синий";
-        case CarColor::Red: 
-            return "Красный";
-        case CarColor::Pink: 
-            return "Розовый";
-        case CarColor::Purple: 
-            return "Фмолетовый";
-        case CarColor::Green: 
-            return "Зеленый";
-        case CarColor::Yellow: 
-            return "Желтый";
-        default: 
-            return "Unknown";
+        switch (color)
+        {
+            case CarColor::Blue:
+                return "Синий";
+            case CarColor::Red:
+                return "Красный";
+            case CarColor::Pink:
+                return "Розовый";
+            case CarColor::Purple:
+                return "Фмолетовый";
+            case CarColor::Green:
+                return "Зеленый";
+            case CarColor::Yellow:
+                return "Желтый";
+            case CarColor::Black: 
+                return "Черный";
+            case CarColor::White:
+                return "Белый";
+            case CarColor::Gray:
+                return "Серый";
+            default:
+                return "Неизвестно";
+        }
+    }
+    else
+    {
+        switch (color)
+        {
+            case CarColor::Blue:
+                return "Blue";
+            case CarColor::Red:
+            return "Red";
+            case CarColor::Pink:
+                return "Pink";
+            case CarColor::Purple:
+                return "Purple";
+            case CarColor::Green:
+                return "Green";
+            case CarColor::Yellow:
+                return "Yellow";
+            case CarColor::Black: 
+                return "Black";
+            case CarColor::White:
+                return "White"; 
+            case CarColor::Gray:
+                return "Gray";
+            default:
+                return "Unknown";
+        }
     }
 }
 
-string CarBodyworkToString(CarBodywork body)
+string CarBodyworkToString(CarBodywork body, bool toDisplay)
 {
-    switch (body) 
+    if (toDisplay)
     {
-        case CarBodywork::Sedan:
-            return "Седан";
-        case CarBodywork::Compartment: 
-            return "Купе";
-        case CarBodywork::Hatchback: 
-            return "Хэтчбек";
-        case CarBodywork::Universal: 
-            return "Универсал";
-        default: return 
-            "Unknown";
+        switch (body)
+        {
+            case CarBodywork::Sedan:
+                return "Седан";
+            case CarBodywork::Compartment:
+                return "Купе";
+            case CarBodywork::Hatchback:
+                return "Хэтчбек";
+            case CarBodywork::Universal:
+                return "Универсал";
+            default: return
+                "Неизвестно";
+        }
+    }
+    else
+    {
+        switch (body)
+        {
+            case CarBodywork::Sedan:
+                return "Sedan";
+            case CarBodywork::Compartment:
+                return "Compartment";
+            case CarBodywork::Hatchback:
+                return "Hatchback";
+            case CarBodywork::Universal:
+                return "Universal";
+            default: return
+                "Неизвестно";
+        }
     }
 }

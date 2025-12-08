@@ -19,7 +19,7 @@ enum class Country
 };
 
 enum class CarColor {
-    Blue, Red, Pink, Purple, Green, Yellow
+    Blue, Red, Pink, Purple, Green, Yellow, Black, White, Gray
 };
 
 enum class CarBodywork 
@@ -36,7 +36,7 @@ struct Car
         CarBodywork carBodyworkP,
         std::string nameP,
         std::string surnameP,
-        std::string patronymicP){ }
+        std::string patronymicP);
     CarMark carmark;
     CarColor carColor;
     std::string factorynumber;

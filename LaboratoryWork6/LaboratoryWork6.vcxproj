@@ -129,6 +129,7 @@
     <ClCompile Include="LaboratoryWork6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BusinessLogic.h" />
     <ClInclude Include="ConvertDataToStr.h" />
     <ClInclude Include="Data.h" />
   </ItemGroup>
