@@ -123,7 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BusinessLogic.cpp" />
+    <ClCompile Include="ConvertDataToStr.cpp" />
+    <ClCompile Include="Data.cpp" />
     <ClCompile Include="LaboratoryWork6.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConvertDataToStr.h" />
+    <ClInclude Include="Data.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
