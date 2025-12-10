@@ -28,3 +28,4 @@ Car::Car(CarMark carmarkP,
 	surname = surnameP;
 	patronymic = patronymicP;
 }
+Car::Car(){}

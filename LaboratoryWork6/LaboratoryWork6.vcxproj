@@ -126,12 +126,14 @@
     <ClCompile Include="BusinessLogic.cpp" />
     <ClCompile Include="ConvertDataToStr.cpp" />
     <ClCompile Include="Data.cpp" />
-    <ClCompile Include="LaboratoryWork6.cpp" />
+    <ClCompile Include="MainModule.cpp" />
+    <ClCompile Include="MyList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BusinessLogic.h" />
     <ClInclude Include="ConvertDataToStr.h" />
     <ClInclude Include="Data.h" />
+    <ClInclude Include="MyList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

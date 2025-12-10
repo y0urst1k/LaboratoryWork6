@@ -1,5 +1,4 @@
-#ifndef DATA_H
-#define DATA_H
+#pragma once
 
 #include <string>
 #include <map>
@@ -10,7 +9,7 @@ enum class CarMark
     MercedesBenz, BMW, Audi, Volkswagen, Porsche, Opel,
     Toyota, Mitsubishi, Mazda, Lexus, Nissan, Suzuki,
     Cadillac, Dodge, Chevrolet,
-    Lada, ”¿«, Aurus
+    Lada, ”¿«, Aurus, Unknown
 };
 
 enum class Country 
@@ -19,12 +18,12 @@ enum class Country
 };
 
 enum class CarColor {
-    Blue, Red, Pink, Purple, Green, Yellow, Black, White, Gray
+    Blue, Red, Pink, Purple, Green, Yellow, Black, White, Gray, Unknown
 };
 
 enum class CarBodywork 
 {
-    Sedan, Compartment, Hatchback, Universal
+    Sedan, Compartment, Hatchback, Universal, Unknown
 };
 
 struct Car 
@@ -37,6 +36,7 @@ struct Car
         std::string nameP,
         std::string surnameP,
         std::string patronymicP);
+    Car();
     CarMark carmark;
     CarColor carColor;
     std::string factorynumber;
@@ -69,5 +69,3 @@ const std::map<CarMark, Country> modelToCountry =
     {CarMark::”¿«, Country::Russia},
     {CarMark::Aurus, Country::Russia}
 };
-
-#endif

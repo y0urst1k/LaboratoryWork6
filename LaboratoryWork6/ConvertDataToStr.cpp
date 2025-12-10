@@ -98,7 +98,7 @@ string CarColorToString(CarColor color, bool toDisplay)
             case CarColor::Pink:
                 return "Розовый";
             case CarColor::Purple:
-                return "Фмолетовый";
+                return "Фиолетовый";
             case CarColor::Green:
                 return "Зеленый";
             case CarColor::Yellow:

@@ -3,11 +3,12 @@
 #include <iostream>
 #include "Data.h"
 #include "BusinessLogic.h"
+#include "MyList.h"
 
 int main()
 {
     setlocale(LC_ALL, "Ru");
     
-    std::vector<Car> cars;
+    MyList cars;
     Menu(cars);
 }
