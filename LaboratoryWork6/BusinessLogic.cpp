@@ -421,5 +421,16 @@ void InitializeCars(vector<Car>& cars)
         "Константинович"
     );
 
+    cars.emplace_back(
+        CarMark::Aurus,
+        CarColor::Red,
+        "1G123456789012349",
+        2021, 8, 22,
+        CarBodywork::Sedan,
+        "Василий",
+        "Котиков",
+        "Константинович"
+    );
+
     cout << "Вектор заполнен тестовыми данными (" << cars.size() << " автомобилей)" << endl;
 }
