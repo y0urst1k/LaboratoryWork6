@@ -9,7 +9,7 @@ string CarMarkToString(CarMark mark)
     switch (mark) 
     {
         case CarMark::MercedesBenz: 
-            return "Mercedes-Benz";
+            return "MercedesBenz";
         case CarMark::BMW: 
             return "BMW";
         case CarMark::Audi: 
