@@ -13,35 +13,32 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Lab1">
+      <UniqueIdentifier>{df7db9bc-3adc-4844-b206-80b483bb69ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="BusinessLogic.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvertDataToStr.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Data.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Lab1</Filter>
     </ClCompile>
-    <ClCompile Include="MyList.cpp">
+    <ClCompile Include="BusinessLogic.cpp">
+      <Filter>Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="LabsManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BusinessLogic.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="ConvertDataToStr.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Lab1</Filter>
     </ClInclude>
     <ClInclude Include="Data.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Lab1</Filter>
     </ClInclude>
-    <ClInclude Include="MyList.h">
+    <ClInclude Include="LabsManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
