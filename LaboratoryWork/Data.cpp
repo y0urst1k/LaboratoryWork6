@@ -50,6 +50,31 @@ std::string Virus::GetDateDiscovery() const
     return std::to_string(DayDiscovery) + "." + std::to_string(MonthDiscovery) + "." + std::to_string(YearDiscovery);
 }
 
+//Методы конвертации элементов перечислений в строку
+std::string Virus::GetTypeString() const 
+{
+    switch (Type) 
+    {
+        case VirusType::FileBased:     return "FileBased";
+        case VirusType::Bootable:      return "Bootable";
+        case VirusType::MacroVirus:     return "MacroVirus";
+        case VirusType::NetworkWorm:   return "NetworkWorm";
+        default:                      return "Unknown";
+    }
+}
+
+std::string Virus::GetPlatformString() const 
+{
+    switch (TargetPlatform) 
+    {
+        case Platform::Windows:  return "Windows";
+        case Platform::Linux:    return "Linux";
+        case Platform::Android:    return "Android";
+        case Platform::iOS:       return "iOS";
+        default:                 return "Unknown";
+    }
+}
+
 // Метод проверки даты
 bool Virus::IsValidDate(int Day, int Month, int Year) const 
 {

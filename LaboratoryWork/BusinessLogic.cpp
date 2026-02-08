@@ -55,8 +55,8 @@ void WriteDataInFile(const vector<Virus>& viruses, fstream& file)
 void PrintVirus(const Virus& virus)
 {
     cout << "Name: " << virus.GetName() << endl;
-    cout << "Type: " << virus.GetType() << endl;
-    cout << "Target platform: " << virus.GetTargetPlatform() << endl;
+    cout << "Type: " << virus.GetTypeString() << endl;
+    cout << "Target platform: " << virus.GetPlatformString() << endl;
     cout << "Propagation rate: " << virus.GetPropagationRate() << endl;
     cout << "Date detection: " << virus.GetDateDiscovery() << endl;
     cout << "----------------------------------------" << endl;
@@ -136,8 +136,9 @@ vector<Virus> SortViruses(const std::vector<Virus>& viruses, int property)
     }
 }
 
-void StartLab1(vector<Virus>& viruses)
+void StartLab1()
 {
+    vector<Virus> viruses;
     int choice;
     do
     {
@@ -208,7 +209,8 @@ void StartLab1(vector<Virus>& viruses)
                 if (property == 1 || property == 2) 
                 {
                     viruses = SortViruses(viruses, property);
-                    cout << "Sort is done." << endl;
+                    if(!viruses.empty())
+                        cout << "Sort is done." << endl;
                 }
                 else 
                 {

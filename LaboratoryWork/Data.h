@@ -2,9 +2,9 @@
 
 #include <string>
 
-enum VirusType { FileBased, Bootable, MacroVirus, NetworkWorm };
+enum class VirusType { FileBased, Bootable, MacroVirus, NetworkWorm, Unknown };
 
-enum Platform { Windows, Linux, Android, iOS };
+enum class Platform{ Windows, Linux, Android, iOS, Unknown };
 
 struct Virus
 {
@@ -35,6 +35,8 @@ public:
 	int GetMonthDiscovery() const;
 	int GetYearDiscovery() const;
 	std::string GetDateDiscovery() const;
+	std::string GetTypeString() const;
+	std::string GetPlatformString() const;
 
 private:
 	bool IsValidDate(int day, int month, int year) const;

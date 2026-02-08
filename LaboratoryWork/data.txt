@@ -1,1 +1,5 @@
-MercedesBenz Blue 123456788 1602277200 Compartment 1682110800 Vasiliy Kuznecov Vladislavovich 
+WannaCry 3 0 2.5 12 5 2017
+Zeus 0 0 1.1 10 3 2010
+ILOVEYOU 2 0 0.9 5 5 2000
+Stuxnet 1 0 0.3 17 6 2010
+Android_Banker 0 2 1.8 22 11 2022

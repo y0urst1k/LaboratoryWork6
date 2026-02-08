@@ -3,7 +3,12 @@
 #include <iostream>
 #include "LabsManager.h"
 
-void LabsManager::AddLab(int number, LabFunction func, const std::string& name) {
+using std::string;
+using std::cout;
+using std::cin;
+
+void LabsManager::AddLab(int number, LabFunction func, const string& name) 
+{
     labs[number] = func;
     labNames[number] = name;
 }
@@ -13,27 +18,30 @@ void LabsManager::RunLab(int number)
     auto it = labs.find(number);
     if (it == labs.end()) 
     {
-        std::cout << "LabWork №" << number << " not found!\n";
+        cout << "LabWork №" << number << " not found!\n";
         return;
     }
     it->second();  // Запускаем функцию лабы
 }
 
-void LabsManager::ShowMenu() {
-    std::cout << "\n=== LABS MENU ===\n";
+void LabsManager::ShowMenu() 
+{
+    AddLab(1, StartLab1, "Multi-file projects in C++");
+    cout << "\n=== LABS MENU ===\n";
 
     // Выводим список
-    for (const auto& [num, name] : labNames) {
-        std::cout << num << ". " << name << "\n";
+    for (auto it = labNames.begin(); it != labNames.end(); it++) 
+    {
+        cout << it->first << ". " << it->second << "\n";  // first = num, second = name
     }
-    std::cout << "0. Выход\n";
+    cout << "0. Exit\n";
 
     int choice;
-    std::cout << "Выберите номер (0-выход): ";
-    std::cin >> choice;
+    cout << "Choose number (0-exit): ";
+    cin >> choice;
 
     if (choice == 0) {
-        std::cout << "До свидания!\n";
+        cout << "Goodbuy!\n";
         return;
     }
 

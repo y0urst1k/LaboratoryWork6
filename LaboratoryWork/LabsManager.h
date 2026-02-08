@@ -13,10 +13,10 @@ private:
     std::map<int, std::string> labNames;
 
 public:
-    // Добавить лабу
+    // Добавить
     void AddLab(int number, LabFunction func, const std::string& name);
 
-    // Запустить лабу по номеру
+    // Запуск по номеру
     void RunLab(int number);
 
     // Показать меню и запустить
