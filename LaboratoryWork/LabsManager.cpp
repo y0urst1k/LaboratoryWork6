@@ -26,7 +26,6 @@ void LabsManager::RunLab(int number)
 
 void LabsManager::ShowMenu() 
 {
-    AddLab(1, StartLab1, "Multi-file projects in C++");
     cout << "\n=== LABS MENU ===\n";
 
     // Выводим список
@@ -35,15 +34,35 @@ void LabsManager::ShowMenu()
         cout << it->first << ". " << it->second << "\n";  // first = num, second = name
     }
     cout << "0. Exit\n";
+    cout << "Choose lab:";
+}
 
-    int choice;
-    cout << "Choose number (0-exit): ";
-    cin >> choice;
+void LabsManager::Run() 
+{
+    while (true) 
+    {
+        ShowMenu();  // Выводим меню
 
-    if (choice == 0) {
-        cout << "Goodbuy!\n";
-        return;
+        int choice;
+        cout << "Choose number (0-exit): ";
+        if (!(std::cin >> choice)) {
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "Please enter a number!\n";
+            continue;
+        }
+
+        if (choice == 0) 
+        {
+            cout << "Goodbye!\n";
+            break;
+        }
+
+        RunLab(choice);  // Запускаем выбранную лабу
     }
+}
 
-    RunLab(choice);
+LabsManager::LabsManager() 
+{
+    AddLab(1, StartLab1, "Multi-file projects in C++");
 }

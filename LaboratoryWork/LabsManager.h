@@ -21,4 +21,8 @@ public:
 
     // Показать меню и запустить
     void ShowMenu();
+
+    void Run();
+
+    LabsManager();
 };

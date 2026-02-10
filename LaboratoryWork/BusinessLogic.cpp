@@ -83,9 +83,65 @@ void ClearViruses(vector<Virus>& viruses)
     cout << "List of viruses is clear." << endl;
 }
 
+int PartitionByYear(vector<Virus>& arr, int low, int high) 
+{
+    int pivotYear = arr[high].GetYearDiscovery(); // Опорный элемент — год последнего вируса
+    int i = low - 1; // Индекс меньшего элемента
+
+    for (int j = low; j <= high - 1; j++) 
+    {
+        // Если год текущего вируса >= опорного (сортируем по убыванию!)
+        if (arr[j].GetYearDiscovery() >= pivotYear) 
+        {
+            i++;
+            std::swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i + 1], arr[high]);
+    return (i + 1);
+}
+
+void QuickSortByYear(vector<Virus>& arr, int low, int high) 
+{
+    if (low < high) 
+    {
+        int pi = PartitionByYear(arr, low, high);
+        QuickSortByYear(arr, low, pi - 1);  // Левая часть
+        QuickSortByYear(arr, pi + 1, high); // Правая часть
+    }
+}
+
+int PartitionByName(vector<Virus>& arr, int low, int high)
+{
+    string pivotYear = arr[high].GetName(); // Опорный элемент
+    int i = low - 1; // Индекс меньшего элемента
+
+    for (int j = low; j <= high - 1; j++)
+    {
+        // Если имя текущего вируса <= опорного (сортируем по возрастанию!)
+        if (arr[j].GetName() <= pivotYear)
+        {
+            i++;
+            std::swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i + 1], arr[high]);
+    return (i + 1);
+}
+
+void QuickSortByName(vector<Virus>& arr, int low, int high)
+{
+    if (low < high)
+    {
+        int pi = PartitionByName(arr, low, high);
+        QuickSortByName(arr, low, pi - 1);  // Левая часть
+        QuickSortByName(arr, pi + 1, high); // Правая часть
+    }
+}
+
 vector<Virus> SortViruses(const std::vector<Virus>& viruses, int property)
 {
-    if (viruses.empty())
+    if (viruses.empty() || viruses.size() <= 1)
     {
         cout << "Nothing to sort." << endl;
         return viruses;
@@ -93,36 +149,17 @@ vector<Virus> SortViruses(const std::vector<Virus>& viruses, int property)
     else
     {
         vector<Virus> sorted = viruses;
-        int N = sorted.size();
 
         switch (property)
         {
         case 1:
         {
-            for (int i = 0; i < N - 1; ++i)
-            {
-                for (int j = 0; j < N - i - 1; ++j)
-                {
-                    if (sorted[j].GetYearDiscovery() < sorted[j + 1].GetYearDiscovery())
-                    {
-                        swap(sorted[j], sorted[j + 1]);
-                    }
-                }
-            }
+            QuickSortByYear(sorted, 0, viruses.size() - 1);
             break;
         }
         case 2:
         {
-            for (int i = 0; i < N - 1; ++i)
-            {
-                for (int j = 0; j < N - i - 1; ++j)
-                {
-                    if (sorted[j].GetName() > sorted[j + 1].GetName())
-                    {
-                        swap(sorted[j], sorted[j + 1]);
-                    }
-                }
-            }
+            QuickSortByName(sorted, 0, viruses.size() - 1);
             break;
         }
         default:
@@ -136,22 +173,25 @@ vector<Virus> SortViruses(const std::vector<Virus>& viruses, int property)
     }
 }
 
+
+
 void StartLab1()
 {
     vector<Virus> viruses;
     int choice;
     do
     {
-        cout << "\n=== Меню ===\n";
+        cout << "\n=== Menu ===\n";
         cout << "1. Read viruses from file\n";
         cout << "2. Write viruses in file\n";
         cout << "3. Sort list\n";
         cout << "4. Clear list\n";
         cout << "5. Print list\n";
         cout << "6. Exit\n";
-        cout << "Choose action (1–9): ";
+        cout << "Choose action (1–6): ";
 
-        if (!(cin >> choice)) {
+        if (!(cin >> choice)) 
+        {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Input number!" << endl;

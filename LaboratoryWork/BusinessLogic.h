@@ -17,6 +17,10 @@ void PrintAllViruses(const std::vector<Virus>& viruses);
 void ClearViruses(std::vector<Virus>& viruses);
 
 // Сортировка
+int PartitionByYear(std::vector<Virus>& arr, int low, int high);
+void QuickSortByYear(std::vector<Virus>& arr, int low, int high);
+int PartitionByName(std::vector<Virus>& arr, int low, int high);
+void QuickSortByName(std::vector<Virus>& arr, int low, int high);
 std::vector<Virus> SortViruses(const std::vector<Virus>& viruses, int property);
 
 // Главное меню
