@@ -124,15 +124,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BusinessLogic.cpp" />
-    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="Bell.cpp" />
+    <ClCompile Include="BusinessLogicLab1.cpp" />
+    <ClCompile Include="DataLab1.cpp" />
+    <ClCompile Include="Lab2Module.cpp" />
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
+    <ClCompile Include="OddEvenSeparator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BusinessLogic.h" />
-    <ClInclude Include="Data.h" />
+    <ClInclude Include="Bell.h" />
+    <ClInclude Include="BusinessLogicLab1.h" />
+    <ClInclude Include="DataLab1.h" />
+    <ClInclude Include="Lab2Module.h" />
     <ClInclude Include="LabsManager.h" />
+    <ClInclude Include="OddEvenSeparator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

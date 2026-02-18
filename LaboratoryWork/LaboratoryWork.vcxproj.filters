@@ -16,30 +16,54 @@
     <Filter Include="Lab1">
       <UniqueIdentifier>{df7db9bc-3adc-4844-b206-80b483bb69ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab2">
+      <UniqueIdentifier>{1a444dad-50e5-46fb-af56-4d17c7479997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab2\Exercise">
+      <UniqueIdentifier>{2c4eb896-b63b-4139-9c6f-235eda9c0b5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Data.cpp">
+    <ClCompile Include="DataLab1.cpp">
       <Filter>Lab1</Filter>
     </ClCompile>
-    <ClCompile Include="BusinessLogic.cpp">
+    <ClCompile Include="BusinessLogicLab1.cpp">
       <Filter>Lab1</Filter>
     </ClCompile>
     <ClCompile Include="LabsManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Lab2Module.cpp">
+      <Filter>Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Bell.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="OddEvenSeparator.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BusinessLogic.h">
+    <ClInclude Include="BusinessLogicLab1.h">
       <Filter>Lab1</Filter>
     </ClInclude>
-    <ClInclude Include="Data.h">
+    <ClInclude Include="DataLab1.h">
       <Filter>Lab1</Filter>
     </ClInclude>
     <ClInclude Include="LabsManager.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2Module.h">
+      <Filter>Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="OddEvenSeparator.h">
+      <Filter>Lab2\Exercise</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

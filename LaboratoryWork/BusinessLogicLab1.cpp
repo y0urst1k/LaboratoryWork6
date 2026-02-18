@@ -1,5 +1,5 @@
-#include "Data.h"
-#include "BusinessLogic.h"
+#include "DataLab1.h"
+#include "BusinessLogicLab1.h"
 #include <fstream>
 #include <string>
 #include <iostream>

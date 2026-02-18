@@ -1,5 +1,5 @@
-#include "Data.h"
-#include "BusinessLogic.h"
+#include "DataLab1.h"
+#include "BusinessLogicLab1.h"
 #include <iostream>
 #include "LabsManager.h"
 
@@ -15,6 +15,26 @@ void LabsManager::AddLab(int number, LabFunction func, const string& name)
 
 void LabsManager::RunLab(int number) 
 {
+    switch (number)
+    {
+    case 1:
+    {
+        auto it = labs.find(number);
+        if (it == labs.end())
+        {
+            cout << "LabWork №" << number << " not found!\n";
+            return;
+        }
+        it->second();  // Запускаем функцию лабы
+    }
+    case 2:
+    {
+        this->module2.StartLab();
+    }
+    }
+
+
+    /*
     auto it = labs.find(number);
     if (it == labs.end()) 
     {
@@ -22,6 +42,7 @@ void LabsManager::RunLab(int number)
         return;
     }
     it->second();  // Запускаем функцию лабы
+    */
 }
 
 void LabsManager::ShowMenu() 
