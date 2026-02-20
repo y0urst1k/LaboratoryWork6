@@ -45,6 +45,9 @@
     <ClCompile Include="OddEvenSeparator.cpp">
       <Filter>Lab2\Exercise</Filter>
     </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BusinessLogicLab1.h">
@@ -63,6 +66,9 @@
       <Filter>Lab2\Exercise</Filter>
     </ClInclude>
     <ClInclude Include="OddEvenSeparator.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Table.h">
       <Filter>Lab2\Exercise</Filter>
     </ClInclude>
   </ItemGroup>

@@ -131,6 +131,7 @@
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
     <ClCompile Include="OddEvenSeparator.cpp" />
+    <ClCompile Include="Table.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bell.h" />
@@ -139,6 +140,7 @@
     <ClInclude Include="Lab2Module.h" />
     <ClInclude Include="LabsManager.h" />
     <ClInclude Include="OddEvenSeparator.h" />
+    <ClInclude Include="Table.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

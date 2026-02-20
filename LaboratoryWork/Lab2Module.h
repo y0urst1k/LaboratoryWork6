@@ -1,12 +1,15 @@
 #pragma once
 #include "Bell.h"
 #include "OddEvenSeparator.h"
+#include "Table.h"
 
 class Lab2Module
 {
 private:
 	Bell* bell;
 	OddEvenSeparator* separator;
+	Table* table;
+
 	void StartEx1();
 	void TestEx2();
 	void StartEx2();
