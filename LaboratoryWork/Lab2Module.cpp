@@ -1,4 +1,5 @@
 #include "Lab2Module.h"
+#include "Complex.h"
 #include <iostream>
 
 Lab2Module::Lab2Module()
@@ -16,6 +17,13 @@ Lab2Module::~Lab2Module()
 	bell = nullptr;
 	separator = nullptr;
 	table = nullptr;
+}
+
+void Lab2Module::PrintSeparator(char separator, int count)
+{
+	for (int i = 0; i < count; i++)
+		std::cout << separator;
+	std::cout << std::endl;
 }
 
 void Lab2Module::StartEx1()
@@ -75,7 +83,27 @@ void Lab2Module::StartEx3()
 
 void Lab2Module::StartEx4()
 {
+	std::cout << "Start ex 4" << std::endl;
 
+	Complex complex1 = Complex(3,-2);
+	Complex complex2 = Complex(-4, 5);
+
+	auto result1 = complex1.Add(complex2);
+	auto result2 = complex1.Sub(complex2);
+	auto result3 = complex1.Mult(complex2);
+	auto result4 = complex1.Div(complex2);
+
+	std::cout << "Abs result1: " << result1.Abs() << std::endl;
+	std::cout << "Arg result2: " << result2.Arg() << std::endl;
+
+	std::cout << "Default view result3: ";
+	result3.Print();
+	std::cout << "Trigonometric view result3: ";
+	result4.TrigPrint();
+	std::cout << "Illustrative view result1: ";
+	result1.ExpPrint();
+
+	std::cout << "Ex 4 is complete" << std::endl;
 }
 
 void Lab2Module::StartEx5()
@@ -85,7 +113,15 @@ void Lab2Module::StartEx5()
 
 void Lab2Module::StartLab()
 {
+	PrintSeparator();
 	StartEx1();
+	PrintSeparator();
 	StartEx2();
+	PrintSeparator();
 	StartEx3();
+	PrintSeparator();
+	StartEx4();
+	PrintSeparator();
+	StartEx5();
+	PrintSeparator();
 }

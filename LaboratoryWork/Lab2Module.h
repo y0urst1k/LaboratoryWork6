@@ -10,6 +10,7 @@ private:
 	OddEvenSeparator* separator;
 	Table* table;
 
+	void PrintSeparator(char = '-', int = 30);
 	void StartEx1();
 	void TestEx2();
 	void StartEx2();
