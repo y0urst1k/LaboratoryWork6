@@ -54,6 +54,9 @@ void LabsManager::ShowMenu()
     {
         cout << it->first << ". " << it->second << "\n";  // first = num, second = name
     }
+
+    cout << "2. C++ OOP: encapsulation\n";
+
     cout << "0. Exit\n";
     cout << "Choose lab:";
 }

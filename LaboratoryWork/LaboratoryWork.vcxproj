@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bell.cpp" />
+    <ClCompile Include="Box.cpp" />
     <ClCompile Include="BusinessLogicLab1.cpp" />
     <ClCompile Include="Complex.cpp" />
     <ClCompile Include="DataLab1.cpp" />
@@ -132,16 +133,21 @@
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
     <ClCompile Include="OddEvenSeparator.cpp" />
+    <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="StockManager.cpp" />
     <ClCompile Include="Table.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bell.h" />
+    <ClInclude Include="Box.h" />
     <ClInclude Include="BusinessLogicLab1.h" />
     <ClInclude Include="Complex.h" />
     <ClInclude Include="DataLab1.h" />
     <ClInclude Include="Lab2Module.h" />
     <ClInclude Include="LabsManager.h" />
     <ClInclude Include="OddEvenSeparator.h" />
+    <ClInclude Include="Stock.h" />
+    <ClInclude Include="StockManager.h" />
     <ClInclude Include="Table.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

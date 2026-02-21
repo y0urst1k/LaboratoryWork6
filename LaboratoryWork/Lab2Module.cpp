@@ -1,5 +1,6 @@
 #include "Lab2Module.h"
 #include "Complex.h"
+#include "StockManager.h"
 #include <iostream>
 
 Lab2Module::Lab2Module()
@@ -108,7 +109,12 @@ void Lab2Module::StartEx4()
 
 void Lab2Module::StartEx5()
 {
+	std::cout << "Start ex 5" << std::endl;
 
+	StockManager manager;
+	manager.Run();
+
+	std::cout << "Ex 5 is complete" << std::endl;
 }
 
 void Lab2Module::StartLab()

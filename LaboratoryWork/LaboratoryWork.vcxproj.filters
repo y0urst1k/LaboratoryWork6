@@ -22,6 +22,9 @@
     <Filter Include="Lab2\Exercise">
       <UniqueIdentifier>{2c4eb896-b63b-4139-9c6f-235eda9c0b5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab2\SupportParts">
+      <UniqueIdentifier>{e269c5b1-2584-47d6-bad9-cd7d7617f77a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
@@ -51,6 +54,15 @@
     <ClCompile Include="Complex.cpp">
       <Filter>Lab2\Exercise</Filter>
     </ClCompile>
+    <ClCompile Include="Stock.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClCompile>
+    <ClCompile Include="StockManager.cpp">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BusinessLogicLab1.h">
@@ -76,6 +88,15 @@
     </ClInclude>
     <ClInclude Include="Complex.h">
       <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClInclude>
+    <ClInclude Include="StockManager.h">
+      <Filter>Lab2\SupportParts</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
