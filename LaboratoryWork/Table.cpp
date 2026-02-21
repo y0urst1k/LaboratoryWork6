@@ -3,11 +3,13 @@
 
 Table::Table(int rows, int columns)
 {
+	messages = "Debugging messages\n";
+
 	if (rows < 0 || columns < 0)
 	{
 		rowsCount = 2;
 		columnsCount = 2;
-		messages = "rows or columns < 0, default init table 2x2\n";
+		messages.append("rows or columns < 0, default init table 2x2\n");
 	}
 
 	else
@@ -23,8 +25,6 @@ Table::Table(int rows, int columns)
 		table[i] = new int[columnsCount];
 	}
 
-	isInit = true;
-
 	messages.append("Table is init with: ");
 	messages.append(std::to_string(rowsCount));
 	messages.append(" rows & ");
@@ -34,6 +34,7 @@ Table::Table(int rows, int columns)
 	FillTable();
 	messages.append("Fill table");
 	messages.append("\n");
+	isInit = true;
 }
 
 void Table::FillTable()
@@ -114,6 +115,11 @@ void Table::Print(bool isDebug)
 
 double Table::Average()
 {
+	if (rowsCount == 0 || columnsCount == 0) 
+	{
+		return 0.0; // Избегаем деления на ноль
+	}
+
 	double s = 0;
 	for (int i = 0; i < rowsCount; i++)
 		for (int j = 0; j < columnsCount; j++)

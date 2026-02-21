@@ -44,6 +44,7 @@ void Lab2Module::StartEx2()
 {
 	std::cout << "Start ex 2" << std::endl;
 	
+	TestEx2();
 	separator->Even();
 	separator->Odd();
 
@@ -55,7 +56,8 @@ void Lab2Module::StartEx3()
 	std::cout << "Start ex 3" << std::endl;
 
 	int value = -1;
-	table->FillTable();
+	//table->FillTable();
+	table->Print();
 	value = table->GetValue(1, 2);
 	std::cout << "Value in posotion 1x2: " << value << std::endl;
 	table->SetValue(1, 2, 10);
@@ -66,7 +68,7 @@ void Lab2Module::StartEx3()
 	table->Print();
 	std::cout << "Average: " << table->Average() << std::endl;
 
-	table->Print(true);
+	//table->Print(true);
 
 	std::cout << "Ex 3 is complete" << std::endl;
 }
