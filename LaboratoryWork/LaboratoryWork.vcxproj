@@ -127,28 +127,40 @@
     <ClCompile Include="Bell.cpp" />
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="BusinessLogicLab1.cpp" />
+    <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Complex.cpp" />
     <ClCompile Include="DataLab1.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Hexagon.cpp" />
     <ClCompile Include="Lab2Module.cpp" />
+    <ClCompile Include="Lab3Module.cpp" />
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
     <ClCompile Include="OddEvenSeparator.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Stock.cpp" />
     <ClCompile Include="StockManager.cpp" />
     <ClCompile Include="Table.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bell.h" />
     <ClInclude Include="Box.h" />
     <ClInclude Include="BusinessLogicLab1.h" />
+    <ClInclude Include="Circle.h" />
     <ClInclude Include="Complex.h" />
     <ClInclude Include="DataLab1.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Hexagon.h" />
     <ClInclude Include="Lab2Module.h" />
+    <ClInclude Include="Lab3Module.h" />
     <ClInclude Include="LabsManager.h" />
     <ClInclude Include="OddEvenSeparator.h" />
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Stock.h" />
     <ClInclude Include="StockManager.h" />
     <ClInclude Include="Table.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

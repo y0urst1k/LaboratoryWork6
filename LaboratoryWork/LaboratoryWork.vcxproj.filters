@@ -25,6 +25,12 @@
     <Filter Include="Lab2\SupportParts">
       <UniqueIdentifier>{e269c5b1-2584-47d6-bad9-cd7d7617f77a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab3">
+      <UniqueIdentifier>{b6b143e5-e95f-4d2a-94fd-3460321a7187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab3\Ex1">
+      <UniqueIdentifier>{e90432f1-ba0e-4310-841b-38962ab37818}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
@@ -63,6 +69,24 @@
     <ClCompile Include="StockManager.cpp">
       <Filter>Lab2\SupportParts</Filter>
     </ClCompile>
+    <ClCompile Include="Lab3Module.cpp">
+      <Filter>Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Lab3\Ex1</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure.cpp">
+      <Filter>Lab3\Ex1</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Lab3\Ex1</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Lab3\Ex1</Filter>
+    </ClCompile>
+    <ClCompile Include="Hexagon.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BusinessLogicLab1.h">
@@ -97,6 +121,24 @@
     </ClInclude>
     <ClInclude Include="StockManager.h">
       <Filter>Lab2\SupportParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3Module.h">
+      <Filter>Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Lab3\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Figure.h">
+      <Filter>Lab3\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Lab3\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Lab3\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Hexagon.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
