@@ -3,9 +3,10 @@
 #include <map>
 #include <string>
 #include "Lab2Module.h"
+#include "Lab3Module.h"
+#include <functional>
 
-// Функция лабораторной работы
-using LabFunction = void(*)(void);
+using LabFunction = std::function<void()>;
 
 struct LabsManager 
 {
@@ -13,6 +14,7 @@ private:
     std::map<int, LabFunction> labs;
     std::map<int, std::string> labNames;
     Lab2Module module2;
+    Lab3Module module3;
 
     // Добавить
     void AddLab(int number, LabFunction func, const std::string& name);

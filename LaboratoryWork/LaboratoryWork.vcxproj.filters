@@ -31,6 +31,15 @@
     <Filter Include="Lab3\Ex1">
       <UniqueIdentifier>{e90432f1-ba0e-4310-841b-38962ab37818}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab3\Ex2">
+      <UniqueIdentifier>{420cd264-50df-4593-a69b-06bdbd853720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab3\Ex3">
+      <UniqueIdentifier>{dc7f2573-dede-4825-a81b-a6b0c7dbae36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab3\Ex4">
+      <UniqueIdentifier>{172b5dc2-18cb-4ec3-868d-44602fba77bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
@@ -85,7 +94,31 @@
       <Filter>Lab3\Ex1</Filter>
     </ClCompile>
     <ClCompile Include="Hexagon.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Lab3\Ex1</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>Lab3\Ex3</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Lab3\Ex3</Filter>
+    </ClCompile>
+    <ClCompile Include="Teacher.cpp">
+      <Filter>Lab3\Ex3</Filter>
+    </ClCompile>
+    <ClCompile Include="HumanManager.cpp">
+      <Filter>Lab3\Ex3</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeSummator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareSummator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="Summator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="Demonstrator.cpp">
+      <Filter>Lab3\Ex4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +171,43 @@
       <Filter>Lab3\Ex1</Filter>
     </ClInclude>
     <ClInclude Include="Hexagon.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Lab3\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Lab3\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Fish.h">
+      <Filter>Lab3\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Bird.h">
+      <Filter>Lab3\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyingBird.h">
+      <Filter>Lab3\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Teacher.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanManager.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeSummator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareSummator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Summator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Demonstrator.h">
+      <Filter>Lab3\Ex4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

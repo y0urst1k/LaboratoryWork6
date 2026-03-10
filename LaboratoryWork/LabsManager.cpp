@@ -15,26 +15,6 @@ void LabsManager::AddLab(int number, LabFunction func, const string& name)
 
 void LabsManager::RunLab(int number) 
 {
-    switch (number)
-    {
-    case 1:
-    {
-        auto it = labs.find(number);
-        if (it == labs.end())
-        {
-            cout << "LabWork №" << number << " not found!\n";
-            return;
-        }
-        it->second();  // Запускаем функцию лабы
-    }
-    case 2:
-    {
-        this->module2.StartLab();
-    }
-    }
-
-
-    /*
     auto it = labs.find(number);
     if (it == labs.end()) 
     {
@@ -42,7 +22,6 @@ void LabsManager::RunLab(int number)
         return;
     }
     it->second();  // Запускаем функцию лабы
-    */
 }
 
 void LabsManager::ShowMenu() 
@@ -55,9 +34,6 @@ void LabsManager::ShowMenu()
         cout << it->first << ". " << it->second << "\n";  // first = num, second = name
     }
 
-    cout << "2. C++ OOP: encapsulation\n";
-
-    cout << "0. Exit\n";
     cout << "Choose lab:";
 }
 
@@ -89,4 +65,6 @@ void LabsManager::Run()
 LabsManager::LabsManager() 
 {
     AddLab(1, StartLab1, "Multi-file projects in C++");
+    AddLab(2, [this]() { module2.StartLab(); }, "C++ OOP: encapsulation");
+    AddLab(3, [this]() { module3.StartLab(); }, "OOP in C++: inheritance and polymorphism");
 }
