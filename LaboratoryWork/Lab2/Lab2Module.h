@@ -1,7 +1,7 @@
 #pragma once
-#include "Bell.h"
-#include "OddEvenSeparator.h"
-#include "Table.h"
+#include "Exercise/Bell.h"
+#include "Exercise/OddEvenSeparator.h"
+#include "Exercise/Table.h"
 
 class Lab2Module
 {

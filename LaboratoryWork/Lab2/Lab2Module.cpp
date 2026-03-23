@@ -1,6 +1,6 @@
 #include "Lab2Module.h"
-#include "Complex.h"
-#include "StockManager.h"
+#include "Exercise/Complex.h"
+#include "SupportParts/StockManager.h"
 #include <iostream>
 
 Lab2Module::Lab2Module()

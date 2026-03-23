@@ -1,15 +1,15 @@
 #include <iostream>
 
 #include "Lab3Module.h"
-#include "Figure.h"
-#include "Circle.h"
-#include "Rectangle.h"
-#include "Triangle.h"
-#include "Hexagon.h"
-#include "Fish.h"
-#include "FlyingBird.h"
-#include "HumanManager.h"
-#include "Demonstrator.h"
+#include "Ex1/Figure.h"
+#include "Ex1/Circle.h"
+#include "Ex1/Rectangle.h"
+#include "Ex1/Triangle.h"
+#include "Ex1/Hexagon.h"
+#include "Ex2/Fish.h"
+#include "Ex2/FlyingBird.h"
+#include "Ex3/HumanManager.h"
+#include "Ex4/Demonstrator.h"
 
 void Lab3Module::StartEx1()
 {

@@ -45,169 +45,169 @@
     <ClCompile Include="MainModule.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="DataLab1.cpp">
-      <Filter>Lab1</Filter>
-    </ClCompile>
-    <ClCompile Include="BusinessLogicLab1.cpp">
-      <Filter>Lab1</Filter>
-    </ClCompile>
     <ClCompile Include="LabsManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Lab2Module.cpp">
+    <ClCompile Include="Lab1\BusinessLogicLab1.cpp">
+      <Filter>Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\DataLab1.cpp">
+      <Filter>Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Exercise\Bell.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Exercise\Complex.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Exercise\OddEvenSeparator.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Exercise\Stock.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Exercise\Table.cpp">
+      <Filter>Lab2\Exercise</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\SupportParts\Box.cpp">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\SupportParts\StockManager.cpp">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Lab2Module.cpp">
       <Filter>Lab2</Filter>
     </ClCompile>
-    <ClCompile Include="Bell.cpp">
-      <Filter>Lab2\Exercise</Filter>
+    <ClCompile Include="Lab3\Ex1\Circle.cpp">
+      <Filter>Lab3\Ex1</Filter>
     </ClCompile>
-    <ClCompile Include="OddEvenSeparator.cpp">
-      <Filter>Lab2\Exercise</Filter>
+    <ClCompile Include="Lab3\Ex1\Figure.cpp">
+      <Filter>Lab3\Ex1</Filter>
     </ClCompile>
-    <ClCompile Include="Table.cpp">
-      <Filter>Lab2\Exercise</Filter>
+    <ClCompile Include="Lab3\Ex1\Hexagon.cpp">
+      <Filter>Lab3\Ex1</Filter>
     </ClCompile>
-    <ClCompile Include="Complex.cpp">
-      <Filter>Lab2\Exercise</Filter>
+    <ClCompile Include="Lab3\Ex1\Rectangle.cpp">
+      <Filter>Lab3\Ex1</Filter>
     </ClCompile>
-    <ClCompile Include="Stock.cpp">
-      <Filter>Lab2\Exercise</Filter>
+    <ClCompile Include="Lab3\Ex1\Triangle.cpp">
+      <Filter>Lab3\Ex1</Filter>
     </ClCompile>
-    <ClCompile Include="Box.cpp">
-      <Filter>Lab2\SupportParts</Filter>
+    <ClCompile Include="Lab3\Ex3\Human.cpp">
+      <Filter>Lab3\Ex3</Filter>
     </ClCompile>
-    <ClCompile Include="StockManager.cpp">
-      <Filter>Lab2\SupportParts</Filter>
+    <ClCompile Include="Lab3\Ex3\HumanManager.cpp">
+      <Filter>Lab3\Ex3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3Module.cpp">
+    <ClCompile Include="Lab3\Ex3\Student.cpp">
+      <Filter>Lab3\Ex3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Ex3\Teacher.cpp">
+      <Filter>Lab3\Ex3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Ex4\CubeSummator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Ex4\Demonstrator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Ex4\SquareSummator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Ex4\Summator.cpp">
+      <Filter>Lab3\Ex4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Lab3Module.cpp">
       <Filter>Lab3</Filter>
-    </ClCompile>
-    <ClCompile Include="Circle.cpp">
-      <Filter>Lab3\Ex1</Filter>
-    </ClCompile>
-    <ClCompile Include="Figure.cpp">
-      <Filter>Lab3\Ex1</Filter>
-    </ClCompile>
-    <ClCompile Include="Rectangle.cpp">
-      <Filter>Lab3\Ex1</Filter>
-    </ClCompile>
-    <ClCompile Include="Triangle.cpp">
-      <Filter>Lab3\Ex1</Filter>
-    </ClCompile>
-    <ClCompile Include="Hexagon.cpp">
-      <Filter>Lab3\Ex1</Filter>
-    </ClCompile>
-    <ClCompile Include="Human.cpp">
-      <Filter>Lab3\Ex3</Filter>
-    </ClCompile>
-    <ClCompile Include="Student.cpp">
-      <Filter>Lab3\Ex3</Filter>
-    </ClCompile>
-    <ClCompile Include="Teacher.cpp">
-      <Filter>Lab3\Ex3</Filter>
-    </ClCompile>
-    <ClCompile Include="HumanManager.cpp">
-      <Filter>Lab3\Ex3</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeSummator.cpp">
-      <Filter>Lab3\Ex4</Filter>
-    </ClCompile>
-    <ClCompile Include="SquareSummator.cpp">
-      <Filter>Lab3\Ex4</Filter>
-    </ClCompile>
-    <ClCompile Include="Summator.cpp">
-      <Filter>Lab3\Ex4</Filter>
-    </ClCompile>
-    <ClCompile Include="Demonstrator.cpp">
-      <Filter>Lab3\Ex4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BusinessLogicLab1.h">
-      <Filter>Lab1</Filter>
-    </ClInclude>
-    <ClInclude Include="DataLab1.h">
-      <Filter>Lab1</Filter>
-    </ClInclude>
     <ClInclude Include="LabsManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2Module.h">
+    <ClInclude Include="Lab1\BusinessLogicLab1.h">
+      <Filter>Lab1</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab1\DataLab1.h">
+      <Filter>Lab1</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Exercise\Bell.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Exercise\Complex.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Exercise\OddEvenSeparator.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Exercise\Stock.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Exercise\Table.h">
+      <Filter>Lab2\Exercise</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\SupportParts\Box.h">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\SupportParts\StockManager.h">
+      <Filter>Lab2\SupportParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Lab2Module.h">
       <Filter>Lab2</Filter>
     </ClInclude>
-    <ClInclude Include="Bell.h">
-      <Filter>Lab2\Exercise</Filter>
+    <ClInclude Include="Lab3\Ex1\Circle.h">
+      <Filter>Lab3\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="OddEvenSeparator.h">
-      <Filter>Lab2\Exercise</Filter>
+    <ClInclude Include="Lab3\Ex1\Figure.h">
+      <Filter>Lab3\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="Table.h">
-      <Filter>Lab2\Exercise</Filter>
+    <ClInclude Include="Lab3\Ex1\Hexagon.h">
+      <Filter>Lab3\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="Complex.h">
-      <Filter>Lab2\Exercise</Filter>
+    <ClInclude Include="Lab3\Ex1\Rectangle.h">
+      <Filter>Lab3\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="Stock.h">
-      <Filter>Lab2\Exercise</Filter>
+    <ClInclude Include="Lab3\Ex1\Triangle.h">
+      <Filter>Lab3\Ex1</Filter>
     </ClInclude>
-    <ClInclude Include="Box.h">
-      <Filter>Lab2\SupportParts</Filter>
+    <ClInclude Include="Lab3\Ex2\Animal.h">
+      <Filter>Lab3\Ex2</Filter>
     </ClInclude>
-    <ClInclude Include="StockManager.h">
-      <Filter>Lab2\SupportParts</Filter>
+    <ClInclude Include="Lab3\Ex2\Bird.h">
+      <Filter>Lab3\Ex2</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3Module.h">
+    <ClInclude Include="Lab3\Ex2\Fish.h">
+      <Filter>Lab3\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex2\FlyingBird.h">
+      <Filter>Lab3\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex3\Human.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex3\HumanManager.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex3\Student.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex3\Teacher.h">
+      <Filter>Lab3\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex4\CubeSummator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex4\Demonstrator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex4\SquareSummator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Ex4\Summator.h">
+      <Filter>Lab3\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Lab3Module.h">
       <Filter>Lab3</Filter>
-    </ClInclude>
-    <ClInclude Include="Circle.h">
-      <Filter>Lab3\Ex1</Filter>
-    </ClInclude>
-    <ClInclude Include="Figure.h">
-      <Filter>Lab3\Ex1</Filter>
-    </ClInclude>
-    <ClInclude Include="Rectangle.h">
-      <Filter>Lab3\Ex1</Filter>
-    </ClInclude>
-    <ClInclude Include="Triangle.h">
-      <Filter>Lab3\Ex1</Filter>
-    </ClInclude>
-    <ClInclude Include="Hexagon.h">
-      <Filter>Lab3\Ex1</Filter>
-    </ClInclude>
-    <ClInclude Include="Animal.h">
-      <Filter>Lab3\Ex2</Filter>
-    </ClInclude>
-    <ClInclude Include="Fish.h">
-      <Filter>Lab3\Ex2</Filter>
-    </ClInclude>
-    <ClInclude Include="Bird.h">
-      <Filter>Lab3\Ex2</Filter>
-    </ClInclude>
-    <ClInclude Include="FlyingBird.h">
-      <Filter>Lab3\Ex2</Filter>
-    </ClInclude>
-    <ClInclude Include="Human.h">
-      <Filter>Lab3\Ex3</Filter>
-    </ClInclude>
-    <ClInclude Include="Student.h">
-      <Filter>Lab3\Ex3</Filter>
-    </ClInclude>
-    <ClInclude Include="Teacher.h">
-      <Filter>Lab3\Ex3</Filter>
-    </ClInclude>
-    <ClInclude Include="HumanManager.h">
-      <Filter>Lab3\Ex3</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeSummator.h">
-      <Filter>Lab3\Ex4</Filter>
-    </ClInclude>
-    <ClInclude Include="SquareSummator.h">
-      <Filter>Lab3\Ex4</Filter>
-    </ClInclude>
-    <ClInclude Include="Summator.h">
-      <Filter>Lab3\Ex4</Filter>
-    </ClInclude>
-    <ClInclude Include="Demonstrator.h">
-      <Filter>Lab3\Ex4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

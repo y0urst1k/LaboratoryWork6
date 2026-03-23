@@ -1,5 +1,5 @@
-#include "DataLab1.h"
-#include "BusinessLogicLab1.h"
+#include "Lab1/DataLab1.h"
+#include "Lab1/BusinessLogicLab1.h"
 #include <iostream>
 #include "LabsManager.h"
 

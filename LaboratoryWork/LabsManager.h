@@ -2,8 +2,8 @@
 
 #include <map>
 #include <string>
-#include "Lab2Module.h"
-#include "Lab3Module.h"
+#include "Lab2/Lab2Module.h"
+#include "Lab3/Lab3Module.h"
 #include <functional>
 
 using LabFunction = std::function<void()>;
