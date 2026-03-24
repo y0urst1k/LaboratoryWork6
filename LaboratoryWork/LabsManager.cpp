@@ -67,4 +67,5 @@ LabsManager::LabsManager()
     AddLab(1, StartLab1, "Multi-file projects in C++");
     AddLab(2, [this]() { module2.StartLab(); }, "C++ OOP: encapsulation");
     AddLab(3, [this]() { module3.StartLab(); }, "OOP in C++: inheritance and polymorphism");
+    AddLab(4, [this]() { module4.StartLab(); }, "OOP in C++: redefining operators");
 }

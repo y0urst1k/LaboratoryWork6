@@ -15,6 +15,8 @@ Complex::Complex(double xRe, double yMi)
 	im = yMi;
 }
 
+Complex::Complex(const Complex& other) : re(other.re), im(other.im) {}
+
 void Complex::SetRe(double value)
 {
 	re = value;
@@ -80,12 +82,12 @@ void Complex::ExpPrint() const
 
 Complex Complex::Add(const Complex& z) const
 {
-	return Complex(re + z.GetRe(), im + GetIm());
+	return Complex(re + z.GetRe(), im + z.GetIm());
 }
 
 Complex Complex::Sub(const Complex& z) const
 {
-	return Complex(re - z.GetRe(), im - GetIm());
+	return Complex(re - z.GetRe(), im - z.GetIm());
 }
 
 Complex Complex::Mult(const Complex& z) const
@@ -102,4 +104,99 @@ Complex Complex::Div(const Complex& z) const
 	double partRe = (re * zRe + im * zIm) / (zRe*zRe + zIm*zIm);
 	double partIm = (im * zRe - re * zIm) / (zRe*zRe + zIm*zIm);
 	return Complex(partRe, partIm);
+}
+
+Complex& Complex::operator=(const Complex& other) 
+{
+	if (this != &other)  // защита от самоприсваивания
+	{
+		re = other.re;
+		im = other.im;
+	}
+	return *this;
+}
+
+Complex Complex::operator+(const Complex& other) const 
+{
+	return Complex(re + other.re, im + other.im);
+}
+
+Complex Complex::operator-(const Complex& other) const 
+{
+	return Complex(re - other.re, im - other.im);
+}
+
+Complex Complex::operator*(const Complex& other) const
+{
+	double newRe = re * other.re - im * other.im;
+	double newIm = im * other.re + re * other.im;
+	return Complex(newRe, newIm);
+}
+
+Complex Complex::operator/(const Complex& other) const 
+{
+	double denom = other.re * other.re + other.im * other.im;
+	double newRe = (re * other.re + im * other.im) / denom;
+	double newIm = (im * other.re - re * other.im) / denom;
+	return Complex(newRe, newIm);
+}
+
+Complex& Complex::operator--() 
+{
+	re -= 1;
+	im -= 1;
+	return *this;
+}
+
+Complex Complex::operator--(int) 
+{
+	Complex copy(*this);
+	--(*this);
+	return copy;
+}
+
+Complex& Complex::operator++()
+{
+	re += 1;
+	im += 1;
+	return *this;
+}
+
+Complex Complex::operator++(int)
+{
+	Complex copy(*this);
+	++(*this);
+	return copy;
+}
+
+bool Complex::operator>(const Complex& other) const 
+{
+	return Abs() > other.Abs();
+}
+
+bool Complex::operator<(const Complex& other) const 
+{
+	return Abs() < other.Abs();
+}
+
+bool Complex::operator==(const Complex& other) const 
+{
+	return Abs() == other.Abs();
+}
+
+bool Complex::operator!=(const Complex& other) const 
+{
+	return Abs() != other.Abs();
+}
+
+std::ostream& operator<<(std::ostream& os, const Complex& z) 
+{
+	os << z.re << " + " << z.im << "*i";
+	return os;
+}
+
+std::istream& operator>>(std::istream& is, Complex& z) 
+{
+	is >> z.re >> z.im;
+	return is;
 }

@@ -148,6 +148,8 @@
     <ClCompile Include="Lab3\Ex4\SquareSummator.cpp" />
     <ClCompile Include="Lab3\Ex4\Summator.cpp" />
     <ClCompile Include="Lab3\Lab3Module.cpp" />
+    <ClCompile Include="Lab4\Ex2\Rational.cpp" />
+    <ClCompile Include="Lab4\Lab4Module.cpp" />
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
   </ItemGroup>
@@ -180,6 +182,8 @@
     <ClInclude Include="Lab3\Ex4\SquareSummator.h" />
     <ClInclude Include="Lab3\Ex4\Summator.h" />
     <ClInclude Include="Lab3\Lab3Module.h" />
+    <ClInclude Include="Lab4\Ex2\Rational.h" />
+    <ClInclude Include="Lab4\Lab4Module.h" />
     <ClInclude Include="LabsManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

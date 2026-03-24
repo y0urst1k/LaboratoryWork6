@@ -40,6 +40,12 @@
     <Filter Include="Lab3\Ex4">
       <UniqueIdentifier>{172b5dc2-18cb-4ec3-868d-44602fba77bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab4">
+      <UniqueIdentifier>{644f04d1-338e-4f06-b561-6e6b1a367a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab4\Ex2">
+      <UniqueIdentifier>{970b7c82-5b68-4f19-9a03-5ecd6c392da8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
@@ -119,6 +125,12 @@
     </ClCompile>
     <ClCompile Include="Lab3\Lab3Module.cpp">
       <Filter>Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\Ex2\Rational.cpp">
+      <Filter>Lab4\Ex2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\Lab4Module.cpp">
+      <Filter>Lab4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +220,12 @@
     </ClInclude>
     <ClInclude Include="Lab3\Lab3Module.h">
       <Filter>Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\Ex2\Rational.h">
+      <Filter>Lab4\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\Lab4Module.h">
+      <Filter>Lab4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
