@@ -150,6 +150,8 @@
     <ClCompile Include="Lab3\Lab3Module.cpp" />
     <ClCompile Include="Lab4\Ex2\Rational.cpp" />
     <ClCompile Include="Lab4\Lab4Module.cpp" />
+    <ClCompile Include="Lab5\Ex1\Contains.cpp" />
+    <ClCompile Include="Lab5\Lab5Module.cpp" />
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
   </ItemGroup>
@@ -184,6 +186,10 @@
     <ClInclude Include="Lab3\Lab3Module.h" />
     <ClInclude Include="Lab4\Ex2\Rational.h" />
     <ClInclude Include="Lab4\Lab4Module.h" />
+    <ClInclude Include="Lab5\Ex1\Contains.h" />
+    <ClInclude Include="Lab5\Ex3\Matrix.h" />
+    <ClInclude Include="Lab5\Ex4\Polynomial.h" />
+    <ClInclude Include="Lab5\Lab5Module.h" />
     <ClInclude Include="LabsManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

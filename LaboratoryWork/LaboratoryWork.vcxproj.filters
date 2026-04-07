@@ -46,6 +46,18 @@
     <Filter Include="Lab4\Ex2">
       <UniqueIdentifier>{970b7c82-5b68-4f19-9a03-5ecd6c392da8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab5">
+      <UniqueIdentifier>{bf027ea9-1974-44d1-8e81-53bcecc4ef8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab5\Ex1">
+      <UniqueIdentifier>{afacf26a-7e8e-44c4-90dc-c021fe42dbc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab5\Ex3">
+      <UniqueIdentifier>{4c4557c2-5a72-42c3-aadd-d6b2d42132a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab5\Ex4">
+      <UniqueIdentifier>{ef8d4313-ca6a-4083-9a6a-4a1e8fbce599}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
@@ -131,6 +143,12 @@
     </ClCompile>
     <ClCompile Include="Lab4\Lab4Module.cpp">
       <Filter>Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Ex1\Contains.cpp">
+      <Filter>Lab5\Ex1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Lab5Module.cpp">
+      <Filter>Lab5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -226,6 +244,18 @@
     </ClInclude>
     <ClInclude Include="Lab4\Lab4Module.h">
       <Filter>Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Ex1\Contains.h">
+      <Filter>Lab5\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Ex3\Matrix.h">
+      <Filter>Lab5\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Ex4\Polynomial.h">
+      <Filter>Lab5\Ex4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Lab5Module.h">
+      <Filter>Lab5</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

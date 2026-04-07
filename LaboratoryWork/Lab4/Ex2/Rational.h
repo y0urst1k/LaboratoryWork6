@@ -58,5 +58,21 @@ public:
 
     // вывод в поток
     friend std::ostream& operator<<(std::ostream& os, const Rational& r);
+
+    bool operator>(const Rational& other) const {
+        return num * other.denom > other.num * denom;
+    }
+
+    bool operator<(const Rational& other) const {
+        return num * other.denom < other.num * denom;
+    }
+
+    bool operator>=(const Rational& other) const {
+        return !(*this < other);
+    }
+
+    bool operator<=(const Rational& other) const {
+        return !(*this > other);
+    }
 };
 
