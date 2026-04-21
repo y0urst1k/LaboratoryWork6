@@ -7,6 +7,7 @@
 #include "Lab4/Lab4Module.h"
 #include "Lab5/Lab5Module.h"
 #include <functional>
+#include "Lab6/Lab6Module.h"
 
 using LabFunction = std::function<void()>;
 
@@ -19,6 +20,7 @@ private:
     Lab3Module module3;
     Lab4Module module4;
     Lab5Module module5;
+    Lab6Module module6;
 
     // Добавить
     void AddLab(int number, LabFunction func, const std::string& name);

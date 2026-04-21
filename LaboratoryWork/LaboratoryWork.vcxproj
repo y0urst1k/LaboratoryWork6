@@ -152,6 +152,11 @@
     <ClCompile Include="Lab4\Lab4Module.cpp" />
     <ClCompile Include="Lab5\Ex1\Contains.cpp" />
     <ClCompile Include="Lab5\Lab5Module.cpp" />
+    <ClCompile Include="Lab6\Ex2\BaseCharacter.cpp" />
+    <ClCompile Include="Lab6\Ex2\BaseEnemy.cpp" />
+    <ClCompile Include="Lab6\Ex2\MainHero.cpp" />
+    <ClCompile Include="Lab6\Ex2\Weapon.cpp" />
+    <ClCompile Include="Lab6\Lab6Module.cpp" />
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
   </ItemGroup>
@@ -190,6 +195,14 @@
     <ClInclude Include="Lab5\Ex3\Matrix.h" />
     <ClInclude Include="Lab5\Ex4\Polynomial.h" />
     <ClInclude Include="Lab5\Lab5Module.h" />
+    <ClInclude Include="Lab6\Ex1\Exceptions.h" />
+    <ClInclude Include="Lab6\Ex1\getPassword.h" />
+    <ClInclude Include="Lab6\Ex2\BaseCharacter.h" />
+    <ClInclude Include="Lab6\Ex2\BaseEnemy.h" />
+    <ClInclude Include="Lab6\Ex2\GameExceptions.h" />
+    <ClInclude Include="Lab6\Ex2\MainHero.h" />
+    <ClInclude Include="Lab6\Ex2\Weapon.h" />
+    <ClInclude Include="Lab6\Lab6Module.h" />
     <ClInclude Include="LabsManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

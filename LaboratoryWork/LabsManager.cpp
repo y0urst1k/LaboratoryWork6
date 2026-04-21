@@ -69,4 +69,5 @@ LabsManager::LabsManager()
     AddLab(3, [this]() { module3.StartLab(); }, "OOP in C++: inheritance and polymorphism");
     AddLab(4, [this]() { module4.StartLab(); }, "OOP in C++: redefining operators");
     AddLab(5, [this]() { module5.StartLab(); }, "OOP in C++: templates");
+    AddLab(6, [this]() { module6.StartLab(); }, "OOP in C++: exceptions");
 }
