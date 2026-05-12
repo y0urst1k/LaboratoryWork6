@@ -70,4 +70,5 @@ LabsManager::LabsManager()
     AddLab(4, [this]() { module4.StartLab(); }, "OOP in C++: redefining operators");
     AddLab(5, [this]() { module5.StartLab(); }, "OOP in C++: templates");
     AddLab(6, [this]() { module6.StartLab(); }, "OOP in C++: exceptions");
+    AddLab(7, [this]() { module7.StartLab(); }, "OOP in C++: STL+ è Algorithm");
 }

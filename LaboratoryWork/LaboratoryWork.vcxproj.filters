@@ -67,6 +67,30 @@
     <Filter Include="Lab6\Ex2">
       <UniqueIdentifier>{1012e5bd-8c52-4f42-ace9-81e44732e099}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lab7">
+      <UniqueIdentifier>{445ae40f-426c-4e1d-a096-ff932e3615bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex1">
+      <UniqueIdentifier>{a6ae091f-5918-404c-b996-1f45112af74e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex2">
+      <UniqueIdentifier>{6884a81a-c0e8-4c44-82ca-c2fa065f9ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex3">
+      <UniqueIdentifier>{bd6c9882-41b3-48d2-b296-c74c72b50826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex5">
+      <UniqueIdentifier>{73d9900e-fce0-45a8-8539-737cdb53e03f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex6">
+      <UniqueIdentifier>{6792d645-ef6c-4e66-85ee-09f56533715c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex7">
+      <UniqueIdentifier>{c0582c24-748c-4ecf-9bd4-19342066ccca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lab7\Ex8">
+      <UniqueIdentifier>{660afeae-d87c-4f15-ac8b-111258f7e74e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainModule.cpp">
@@ -173,6 +197,12 @@
     </ClCompile>
     <ClCompile Include="Lab6\Ex2\Weapon.cpp">
       <Filter>Lab6\Ex2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab7\Ex8\NumberProcessor.cpp">
+      <Filter>Lab7\Ex8</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab7\Lab7Module.cpp">
+      <Filter>Lab7</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -304,6 +334,30 @@
     </ClInclude>
     <ClInclude Include="Lab6\Ex2\Weapon.h">
       <Filter>Lab6\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex1\PrintT.h">
+      <Filter>Lab7\Ex1</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex2\ProcessNumber.h">
+      <Filter>Lab7\Ex2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex3\PrintCommonLetters.h">
+      <Filter>Lab7\Ex3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex5\Duplicate.h">
+      <Filter>Lab7\Ex5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex6\Process.h">
+      <Filter>Lab7\Ex6</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex7\UniqueT.h">
+      <Filter>Lab7\Ex7</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Ex8\NumberProcessor.h">
+      <Filter>Lab7\Ex8</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7\Lab7Module.h">
+      <Filter>Lab7</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

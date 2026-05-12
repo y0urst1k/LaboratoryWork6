@@ -157,6 +157,8 @@
     <ClCompile Include="Lab6\Ex2\MainHero.cpp" />
     <ClCompile Include="Lab6\Ex2\Weapon.cpp" />
     <ClCompile Include="Lab6\Lab6Module.cpp" />
+    <ClCompile Include="Lab7\Ex8\NumberProcessor.cpp" />
+    <ClCompile Include="Lab7\Lab7Module.cpp" />
     <ClCompile Include="LabsManager.cpp" />
     <ClCompile Include="MainModule.cpp" />
   </ItemGroup>
@@ -203,6 +205,14 @@
     <ClInclude Include="Lab6\Ex2\MainHero.h" />
     <ClInclude Include="Lab6\Ex2\Weapon.h" />
     <ClInclude Include="Lab6\Lab6Module.h" />
+    <ClInclude Include="Lab7\Ex1\PrintT.h" />
+    <ClInclude Include="Lab7\Ex2\ProcessNumber.h" />
+    <ClInclude Include="Lab7\Ex3\PrintCommonLetters.h" />
+    <ClInclude Include="Lab7\Ex5\Duplicate.h" />
+    <ClInclude Include="Lab7\Ex6\Process.h" />
+    <ClInclude Include="Lab7\Ex7\UniqueT.h" />
+    <ClInclude Include="Lab7\Ex8\NumberProcessor.h" />
+    <ClInclude Include="Lab7\Lab7Module.h" />
     <ClInclude Include="LabsManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
